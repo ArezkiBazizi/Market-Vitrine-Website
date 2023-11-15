@@ -1,0 +1,398 @@
+
+*{
+    margin : 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body{
+    min-height: 1500px;
+    position: relative;
+
+}
+
+h1{
+    font-weight: bold;
+    font-size: 25px;
+    text-shadow: none;
+}
+  
+
+.box h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    color : #0095ba;
+}
+
+.box p{
+    margin:10%;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 16px;
+
+}
+
+.one{
+    background-color: aquamarine;
+position: relative;
+display: flex;
+text-align: center;
+}
+
+.one .propos{
+  WIDTH: 100%;
+  margin-left: auto;
+  background-size:cover;
+  font-family: 'Cabin Condensed', sans-serif;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+
+
+svg{font-weight:bold;max-width:500px;height:45%;}
+
+.typewriter {
+
+    padding:9%;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+    font-size: 20px;
+    margin-top: 0;
+    text-align: center;
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .10em solid green; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    letter-spacing: .10em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: green }
+  }
+
+
+.one img{
+width: 600px;
+margin: 8%;
+}
+
+.one div h1{
+    text-shadow: none;
+    color: black;
+}
+
+.one div H2{
+    text-shadow: none;
+    Font-family: 'Cabin Condensed', sans-serif;
+    font-size: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.menu {
+    display: flex;
+    position: relative;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+}
+
+.menu img {
+   width: 60px;
+   position: relative;
+   top: 12px;
+   filter:grayscale(1)
+}
+
+.menu img:hover{
+    filter:grayscale(0)
+  
+ }
+
+
+.menu i {
+    position: absolute;
+    font-size: 30px;
+    align-items: center;
+}
+
+.menu i:hover {
+    font-size: 32px;
+    align-items: center;
+    margin: auto;
+
+}
+
+.menu ul{
+    margin-left:10%;
+    list-style-type:none;
+
+}
+
+.menu ul li{
+   display: table-cell;
+}
+.menu ul li a {
+    font-size: 20px;
+    float:left;   
+    color:#b9b1b1;
+    text-decoration:none;
+    text-align:center;
+    padding-right:190px;
+
+}
+
+
+ul li a:hover{
+color: rgb(9, 9, 9);
+}
+
+
+
+.head{
+position: relative;
+width: 100%;
+height: 100vh;
+overflow: hidden;
+display: flex;
+justify-content: center;
+align-content: center;
+}
+
+.head_min{
+    width: 80%;
+    margin-left:10%;
+    
+}
+
+.head::before
+{
+content: '';
+position: absolute;
+bottom: 0;
+width: 100%;
+height: 100px;
+z-index : 10000;
+}
+
+.head::after
+{
+content: '';
+position: absolute;
+top: 0;
+left:0;
+width: 100%;
+height: 100%;
+z-index : 10000;
+mix-blend-mode: color;
+}
+
+.head img
+{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    object-fit: cover;
+    pointer-events: none;
+    
+}
+
+.blur img{
+ filter: blur(2px);
+ filter: brightness(80%);
+
+}
+
+.body{
+    width: 100%;
+    position: relative;
+
+}
+
+.box-list{
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+    padding: 10%;
+}
+
+.box-list .box{
+    flex: 1;
+    text-align: center;
+    MARGIN-LEFT: 8%;
+    border-radius: 6%;
+    height: 350px;
+    filter: contrast(90%);
+
+}
+
+.box-list .box:hover{
+    box-shadow:0px 0px 20px 1px black;
+    filter: contrast(100%);
+}
+
+.box-list img{
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+footer{
+    text-align: center;
+    margin-top: 3%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    position: relative;
+}
+
+#eco{
+    background-color: #fdf0f0;
+}
+
+#local{
+    background-color: #ecf8f3;
+}
+
+#humain{
+    background-color:  #ffffff;
+}
+
+#local h2{
+    color: #00a070;
+}
+
+.panel{
+height: 100%;
+margin: 3%;
+}
+
+.panel h1{
+
+    margin: 5%;
+    text-align: center;
+    color: black;
+    text-shadow: 1px 1px 0px rgb(12, 13, 12);
+
+} 
+.panel p{
+margin: 5%;
+text-align: center;
+color: black;
+text-shadow: 1px 1px 0px rgb(12, 13, 12);
+
+}
+
+.panel i{
+    font-size: 40px;
+}
+.panel i:hover{
+    font-size: 45px;
+}
+.panel ul{
+    background: (to right, #ff0000, #0000ff);
+    columns: 3 200px;
+    display: block;
+    font-size: 20px;
+
+}
+
+.panel ul li{
+    margin-bottom:3%;
+    padding: 5%;
+    display: flex;
+    text-align: center;
+}
+
+.panel ul li:hover{
+    box-shadow: 0px 0px 10px 1px gray;
+    border-radius: 5%;
+    background-color: #ecf8f3;
+
+}
+.panel h2{
+    margin-left: 20px;
+}
+
+.contact{
+    position: relative;
+    text-align: center;
+    padding: 5%;
+    background-color: cadetblue;
+}
+
+.contact div i{
+    font-size: 50px;
+}
+
+
+.contact .reseau{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+}
+
+
+.contact .reseau i{
+    text-align: center;
+    font-size: 50px;
+    padding-top: 2%;
+    margin-right: 10%;
+    margin-left: 10%;
+    filter: grayscale(1);
+}
+
+.contact .reseau i:hover{
+    filter: grayscale(0);
+}
+
+.contact p, h1{
+    margin:3%;
+    color: white;
+    text-shadow: 1px 1px 2px rgb(27, 23, 24);
+
+}
+
+.maps{
+    margin: 6%;
+    text-align: center;
+}
+.maps img{
+
+    width: 95%;
+    height: 80%;
+    box-shadow: 1PX -1px 10px 2px #b9b1b1;
+
+}
+
+.maps h1{
+    padding-top: 2%;
+    color: black;
+    text-align: left;
+}
+
+footer h1{
+    text-shadow: 0px 0px 0px rgb(0, 0, 0);
+    color: black;
+    font-size: 15px;
+}
