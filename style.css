@@ -7,6 +7,10 @@
 
 }
 
+html{
+    width: 100%;
+}
+
 body{
     min-height: 1500px;
     position: relative;
@@ -401,7 +405,14 @@ footer h1{
 
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 480px) {
+
+    html{
+        width: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
 
     .box-list {
         display: inline-table;
@@ -409,11 +420,13 @@ footer h1{
     }
 
     body {
-        display: grid;
+        width: 100%;
+        display: contents;
         text-align: center;
     }
     
     .one {
+        width: 100%;
         background-color: white;
     }
 
@@ -426,6 +439,33 @@ footer h1{
         height: auto;
     }
     .head{
-        height: 60vh;
+        height: 30vh;
+        width: 430px;
     }
+
+    .menu{
+        position: relative;
+        text-align: center;
+    }
+
+    .menu .offmobile{
+        display: none;
+    }
+
+    .menu ul{
+        margin-left: 0%;
+        display: contents;
+    }
+
+    .menu ul li {
+        position: relative;
+        width: 100%;
+    }
+
+    .menu ul li a{
+        position: absolute;
+        text-align: center;
+    }
+
+   
 }
